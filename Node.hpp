@@ -4,7 +4,7 @@
 struct Node
 {
     int k;
-    int balanco;
+    int height;
     Node* n_right;
     Node* n_left;
 
