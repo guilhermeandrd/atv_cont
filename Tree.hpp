@@ -1,3 +1,6 @@
+#ifndef TREE.HPP
+#define TREE.HPP
+
 #include "Node.hpp"
 #include "iostream"
 
@@ -61,6 +64,8 @@ Node* fixupNode(Node* p, int key){
     p->height = std::max(height(p->n_left), height(p->n_right)) + 1;
     return nullptr;
 }
+
+#endif
 
 //função add
 
