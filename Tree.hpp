@@ -58,8 +58,10 @@ Node* fixupNode(Node* p, int key){
         return rotacaoEsquerda(p);
     }
 
-
+    p->height = std::max(height(p->n_left), height(p->n_right)) + 1;
     return nullptr;
 }
+
+//função add
 
 //tentar fazer em casa
