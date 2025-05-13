@@ -1,19 +1,21 @@
 #ifndef NODE_HPP
 #define NODE_HPP
 
-struct Node
-{
-    int k;
-    int height;
-    Node* n_right;
-    Node* n_left;
+#include<iostream>
 
-    Node(int ka, Node* n_righti, Node* n_lefti){
-        k = ka;
-        n_right = n_righti;
-        n_left = n_lefti;
-    }
-    /* data */
+struct Node {
+    int key;
+    int height;
+    Node* left;
+    Node* right;
+
+    // Construtor
+    Node (int k, int height, Node* l, Node* r) {
+        key = k;
+        this->height = height;
+        left = l;
+        right = r;
+    } 
 };
 
 #endif
